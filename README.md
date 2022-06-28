@@ -1,4 +1,6 @@
 # Domagala_PSI_Projekt
+
+## Opis projektu 
 Projekt na podstawy sztucznej inteligencji - klasyfikacja Komponentów Niezależnych, otrzymanych z sygnałów elektrycznych z EEG na pochodzące z Mózgu i Artefakty
 
 W przypadku danych Elektrofizjologicznych, a szczegolnie danych mózgowych, ICA służy do wydzielenia pewnych źródeł aktywności mózgowej, która składa się na obserwowany przez nas przy pomocy EEG, mocno zagmatwany i zaszumiony sygnał. Możemy dzięki temu z czasowego sygnału EEG, uzyskać komponenty, gdzie wieksza katywność będzie widoczna na pewnych konkretnie ułożonych w przestrzeni elektrodach - tym samym, mozna wnioskować o źródle tego konkretnego komponentu:
@@ -18,3 +20,9 @@ Dlatego właśnie w tym projekcie chciałbym zeksplorować, czy możliwe jest za
 zbiór danych który jest tutaj rozważany pochodzi ze zbiorów Instytutu Psychologii. Zawiera on podział na testwoe i treningowe zbiory zawierające obrazki, zalabelowane jako rozkład topograficzny aktywności elektrofizjologicznej dla sygnałów pochodzących z mózgu, oraz tych które z mózgu nie pochodzą.
 
 Mamy tez zbiory testowe i treningowe z danych korelacyjnych, które kojarzą, dany komponent wydzielony przez Analizę ICA, z  z amplitudą, częstotliwością, fazą itp. sygnału z elektrod referencyjnych - to znaczy umieszczonych na Mastoidach (uszy) oraz w okół oczu (EOG) lub serca (EKG) - Korelacje te, będą informowały o występowaniu artefaktów.
+
+
+## Zawartość Repozytorium:
++ **Data** - zawiera dane, testowe, treningowe, obrazkowe jak i korelacyjne
++ **ICA_classification** - notebook z właściwym rozwiazaniem
++ **Models** - zawiera zachowane w toku analizy model ANN - swoisty backup najlepszych rozwiazan
